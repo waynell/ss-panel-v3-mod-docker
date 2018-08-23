@@ -1,6 +1,4 @@
-FROM indexyz/docker-php-7
-
-MAINTAINER Indexyz <jiduye@gmail.com>
+FROM tobi312/rpi-php
 
 RUN rm -f /start.sh
 
