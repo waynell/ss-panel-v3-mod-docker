@@ -1,9 +1,8 @@
-FROM wouterds/rpi-php
+FROM tobi312/rpi-php
 
 COPY run.sh /start.sh
 
-RUN apt-get update \
-    && apt-get install -y git zip unzip \
+RUN apt-get update && apt-get install -y git zip unzip \
     && rm -rf /data/www \
     && mkdir /data/www \
     && cd /data \
