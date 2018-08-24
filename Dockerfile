@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y git zip unzip \
     && /usr/local/php/bin/php xcat initdownload \
     && /usr/local/php/bin/php xcat initQQWry \
     && rm -rf /data/www/public/ssr-download/.git \
-    && rm -rf /tmp/* /var/tmp/* && yum clean all \
+    && rm -rf /tmp/* /var/tmp/* \
     && chmod +x /start.sh
 
 WORKDIR /data/www
