@@ -2,7 +2,7 @@ FROM tobi312/rpi-php
 
 COPY run.sh /start.sh
 
-RUN yum install git zip unzip -y &&\
+RUN apt-get install git zip unzip -y &&\
     rm -rf /data/www && \
     mkdir /data/www && \
     cd /data && \
