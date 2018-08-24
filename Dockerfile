@@ -1,4 +1,4 @@
-FROM tobi312/rpi-php
+FROM blepiolot/rpi-apache-php
 
 COPY run.sh /start.sh
 
