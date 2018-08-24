@@ -1,7 +1,5 @@
 FROM tobi312/rpi-php
 
-RUN rm -f /start.sh
-
 COPY run.sh /start.sh
 
 RUN yum install git zip unzip -y &&\
